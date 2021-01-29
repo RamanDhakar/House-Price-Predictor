@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">House Price Predictor</h1>
+      <div class="row center">
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='http://127.0.0.1:5000/predict' method="get" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <label for="rm"><b>RM</b></label>
+          <br>
+        <input placeholder="Avg Rooms Per Building" name="rm" id="rm" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="zn"><b>ZN</b></label>
+          <br>
+        <input placeholder="Residential Landzone over 25k sqft" name="zn" id="zn" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+
+          <label for="age"><b>AGE </b></label>
+            <br>
+          <input id="age" name="age" placeholder="Owner-occupied units built prior to 1940"  type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="rad"><b>RAD</b></label>
+          <br>
+        <input id="rad" name="rad" placeholder="accessibility to Radial Highway" type="text" class="validate">
+      </div>
+
+        <div class="input-field col s4">
+          <label for="crim"><b>CRIM</b></label>
+          <br>
+         <input id="crim" name="crim" placeholder="per capita crime rate" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="nox"><b>NOX</b></label>
+          <br>
+         <input id="nox" name="nox" placeholder="Nitric Oxidesconcentration in ppm" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="tax"><b>TAX</b></label>
+          <br>
+          <input placeholder="TAX rate per $10,000" name="tax" id="tax" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="indus"><b>INDUS</b></label>
+          <br>
+          <input placeholder="Non retai Business area/town" name="indus" id="indus" type="text" class="validate">
+       </div>
+
+       <div class="input-field col s4">
+         <label for="ptratio"><b>PT ratio</b></label>
+         <br>
+         <input placeholder="pupil-teacher ratio " name="ptratio" id="ptratio" type="text" class="validate">
+       </div>
+
+        <div class="input-field col s4">
+            <label for="lstat"><b>LSTAT</b></label>
+            <br>
+          <input placeholder="% lower status of the population" name="lstat" id="lstat" type="text" class="validate">
+        </div>
+        
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Show Price (1000$)</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
