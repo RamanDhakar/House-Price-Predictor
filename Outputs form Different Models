@@ -6,14 +6,8 @@ model outputs:-
      rmse :  4.566444632700409
      MEA : 3.3092871720463064
      r2_score : 0.7441207656576998
-     
-  Decision tree-
-     rmse :  0.0
-     MEA : 0.0
-     r2_score : 1.0   (overfitting)
-     
   
   Random Forest Regressor-
-     rmse :  1.7773146925892684
+     rmse :  2.2703175316238218
      MEA : 1.2962892004701276
-     r2_score : 0.9612378987017101
+     r2_score : 0.9367512632879338
